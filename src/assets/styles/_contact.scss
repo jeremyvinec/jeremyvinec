@@ -1,0 +1,123 @@
+.input{
+	display: inline-block;
+	border: thin solid #000;
+}
+
+.form_nom{
+	border: none;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	padding: 15px;
+	width: 205px;
+}
+
+.form_email{
+	border: none;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	padding: 15px;
+	width: 205px;
+}
+
+.form_message {
+	border: thin solid #000;
+	width: 450px;
+	height: 120px;
+	padding: 15px;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	margin: 20px 0;
+}
+
+.separator{
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	width: 1px;
+	border-left: thin solid #000;
+	height: 25px;
+}
+
+.email{
+	text-decoration: none;
+	color: #2bb573;
+}
+
+// Social Media
+
+.social-media{
+	display: inline-block;
+	margin: auto;
+}
+
+.social-media ul{
+	display: flex;
+	padding-left: 0px;
+}
+
+.social-media ul li {
+	list-style: none;
+}
+
+.social-media ul li a{
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #262626;
+	overflow: hidden;
+	margin: 6px;
+	transition: .2s;
+	border: 1px solid rgba(0,0,0,1);
+	transform: rotate(45deg);
+}
+
+.social-media ul li a .fa{
+	transform: rotate(-45deg);
+}
+
+.social-media ul li a:before{
+	content: '';
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2bb573;
+	transition: .2s;
+}
+
+.social-media ul li a:hover:before{
+	bottom: 0;
+}
+
+.social-media ul li a:hover{
+	color: #fff;
+}
+
+// Couleur des réseaux sociaux (1,2,3,4,5)
+
+.social-media ul li:nth-child(0) a:before{
+	background: #3b5999;
+}
+
+.social-media ul li:nth-child(0) a:before{
+	background: #55acee;
+}
+
+.social-media ul li:nth-child(0) a:before{
+	background: #e4405f;
+}
+
+.social-media ul li:nth-child(0) a:before{
+	background: #0077B5;
+}
+
+.social-media ul li:nth-child(0) a:before{
+	background: #dd4b39;
+}

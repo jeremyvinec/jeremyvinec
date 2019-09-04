@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Honey Script', sans-serif;
+	src: url('../fonts/HoneyScript-SemiBold.ttf')
+}
+
+@font-face {
+	font-family: 'Titillium Web', sans-serif;
+	src: url('../fonts/TitilliumWeb-Regular.ttf')
+}
+
+body{
+	margin: 0;
+	padding: 0;
+    transition: margin-left 0.2s;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h1{
+	font-size: 2em;
+	margin: auto;
+	font-family: "Honey Script";
+}
+
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: auto;
+}
+
+h3{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+h4{
+	font-size: 10px;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+h5{
+	font-size: .5em;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+p{
+	font-size: 15px;
+	margin: auto;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav li + li {
+	margin-left: 3em;
+}
+
+.centered-container{
+	max-width: 600px;
+	margin: auto;
+	margin-top: 10em;
+}
+
+.section-header {
+	z-index: 1;
+	position: relative;
+	margin: 0 0 3em;
+	padding-bottom: 2em;
+	text-align: center;
+	margin-top: 5em;
+}
+
+.section-header::before {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 2em;
+	height: 2px;
+	margin: auto;
+	background-color: #CCC;
+}
+
+#main {
+    transition: margin-left 0.2s;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.margin-p{
+	margin-top:20px;
+}
