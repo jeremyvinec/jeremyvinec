@@ -1,83 +1,51 @@
-.menu {
-    justify-content: space-between;
-    position: relative;
-    margin: 0 auto;
-}
-
-.menu__right {
-    align-items: center;
-    height: 100%;
-}
-
-.menu__list {
-    list-style-type: none;
-    padding: 0;
-    height: 100%;
-    margin: 0;
-    margin-right: 40px;
-}
-
-.menu__list-item {
-    display: inline-block;
-    height: 100%;
-    margin-right: 20px;
-}
-
-.menu__list-item:last-child {
-    margin-right: 0;
-}
-
-.menu__link {
-    color: #3a3e47;
-    display: inline-block;
-    height: 100%;
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 0 3px;
-}
-
-.menu__link:hover {
-    color: #2bb573;
-}
-
-.menu__link--active {
-    color: #2bb573;
-    border-top: 4px solid #2bb573;
-    font-weight: 700;
-}
-
-.menu__logo {
-    font-family: "Honey Script", Sans-Serif;
-    color: #71cee6;
-    height: 92px;
-}
-
-.menu__search-button {
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    border: 1px solid #c8c9ce;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.menu__search-form {
-    position: absolute;
-    top: 100%;
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
     right: 0;
-    padding: 10px;
-    background-color: white;
+    left: 0;
+    margin: auto;
+    padding: 0 1em;
+    background-color: #FFF;
+    //border-bottom: 1px solid rgba(204,204,204,0.5);
 }
 
-.menu__search-input {
-    outline: none;
-    border: 1px solid #c8c9ce;
-    font-size: 18px;
-    padding: 5px;
-    font-weight: 300;
+nav {
+    display: block;
+}
+
+.nav a:hover {
+    color: #2bb573;
+}
+
+#top-menu {
+    //position: fixed;
+    z-index: 1;
+    background: white;
+    margin-top: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#top-menu a {
+    display: block;
+    padding: 5px 25px 7px 25px;
+    text-align: center;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    border-top: 3px solid white;
+    color: #999;
+    text-decoration: none;
+}
+
+#top-menu a:hover {
+    color: #2bb573;
+}
+
+#top-menu li.active a {
+    border-top: 3px solid #333;
+    color: #333;
 }
