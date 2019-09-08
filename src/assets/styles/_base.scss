@@ -54,6 +54,14 @@ p{
 	margin: auto;
 }
 
+ol{
+	margin-top: 10px;
+}
+
+li {
+	margin-top: 10px;
+}
+
 nav ul li {
 	display: inline-block;
 }
@@ -99,4 +107,12 @@ nav li + li {
 
 .margin-p{
 	margin-top:20px;
+}
+
+ol li::before {
+	color: #e5274b;
+}
+
+.spacing{
+	margin-top: 10px;
 }

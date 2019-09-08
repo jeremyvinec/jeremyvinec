@@ -1,17 +1,10 @@
 .menu {
-    background-color: white;
-    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    width: 752px;
-    height: 80px;
-    display: flex;
     justify-content: space-between;
-    padding: 0 40px;
     position: relative;
+    margin: 0 auto;
 }
 
 .menu__right {
-    display: flex;
     align-items: center;
     height: 100%;
 }
@@ -40,7 +33,6 @@
     height: 100%;
     font-size: 16px;
     text-decoration: none;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     padding: 0 3px;

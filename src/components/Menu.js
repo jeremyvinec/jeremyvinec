@@ -19,8 +19,6 @@ export default class Menu extends React.Component{
 
         return (
             <nav className="menu">
-                <h1 className="menu__logo">Jeremyvinec</h1>
-
                 <div className="menu__right">
                     <ul className="menu__list">
                         {linksMarkup}
