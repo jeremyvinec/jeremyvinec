@@ -28,8 +28,7 @@ class App extends React.Component {
           <header className="header">
             <Menu links={links}></Menu>
           </header>
-          <main>
-            
+          <main className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h2>À propos</h2>
@@ -173,28 +172,31 @@ class App extends React.Component {
             </ul>
           </section>
 
-          <section id="portfolio" className="centered-container">
+          <section id="portfolio">
             <header className="section-header">
               <h2>Portfolio</h2>
               <p>Une sélection de projets sur lesquels j'ai pu intervenir. (en cours)</p>   
             </header>
-            <div className="portfolio">
-              <ul>
-                <li className="button_portfolio active_box" data-filter="all">All</li>
-                <li className="button_portfolio" data-filter="Dev_Web">Développement Web</li>
-                <li className="button_portfolio" data-filter="Dev_Mobile">Développement Mobile</li>
-              </ul>
-
-              <ul id="gallery" className="pure-js-lightbox-container">
-                <li className="box filter Dev_Web"><a href="http://www.camorlaix.bzh/" target="_blank"><img src={lta} alt="Site Web Léon Trégor Athlétisme"/></a></li>
-                <li className="box filter Dev_Web"><a href={bps}><img src={bps} alt="Site Web Bretagne Pompes Services"/></a></li>
-                <li className="box filter Dev_Mobile"><a href={ima}><img src={ima} alt="Application Mobile Ivtracer NetCeler"/></a></li>
-              </ul>
-            
+            <div className="grid">
+              <div class="container_image">
+                <img src={ima}/>
+              </div>
+              <div class="container_image">
+                <img src={bps}/>
+              </div>
+              <div class="container_image">
+                <img src={lta}/>
+              </div>
+              <div class="container_image">
+                <img src={lta}/>
+              </div>
+              <div class="container_image">
+                <img src={lta}/>
+              </div>
             </div>
           </section>
 
-          <section id="contact" className="centered-container">
+          <section id="contact">
             <header className="section-header">
               <h2>Contact</h2>
               <p>Et si on travaillait ensemble ?</p>   
