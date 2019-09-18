@@ -24,7 +24,7 @@ class App extends React.Component {
       { label: 'Contact', link: '#contact'},
     ]
     return (
-      <div className="container">
+      <div>
           <header className="header">
             <Menu links={links}></Menu>
           </header>
@@ -41,8 +41,10 @@ class App extends React.Component {
                 <div className="col-8 text-left">
                   <h5>JEREMY YVINEC</h5>
                   <h5>DÉVELOPPEUR FRONT-END</h5>
-                  <p>
-                    Développeur passionné depuis quelques années, ma passion de l'informatique m'a poussé à approfondir mes connaissances dans le développement de site internet et d’application mobile. 
+                  <p className="spacing">
+                    Développeur passionné depuis quelques années,<br/> ma passion de l'informatique m'a poussé à approfondir<br/> mes connaissances.<br/><br/>
+                    J'ai un faible pour les projets ambitieux et mes technologies de prédilection actuelles sont : mobile (React Native), back-end (NodeJS, MongoDB) et React.js pour le front-end.<br/><br/>
+                    Aujourd'hui je mets ces compétences à votre disposition<br/> pour accompagner vos projets créatifs web et mobile <br/> qui nécessitent une maîtrise des technos modernes embarquées sur nos navigateurs. 
                   </p>
                   <div className="button_submit">
                     <a href={cv} target="_blank">
@@ -60,16 +62,27 @@ class App extends React.Component {
                 <p>ReactJS & React Native</p>   
               </header>
               <div className="row">
-                <div className="col text-right react-logo">
-                  <span className="nucleo"></span>
-                </div>
                 <div className="col">
-                  Brièvement, <b>React JS</b> est une librairie JavaScript <br/>
-                  Open Source mettant à disposition des développeurs <br/>
-                  une logique de composants permettant une grande performance. <br/><br/>
-                  Alors que nous utilisons <b>React JS</b> pour concevoir des <b>sites internet</b><br/>
-                  ou des <b>webapps, React Native</b> nous permet de concevoir<br/>
-                  des <b>applications mobiles</b> et <b>tablettes</b> « cross-platform ».
+                  <div class="circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span></span>
+                  </div>
+                </div>
+                <div className="col text-left">
+                  <h4>Les avantages</h4>
+                  <h3>React JS & React Native</h3>
+                  <p className="spacing">
+                      Brièvement, <b>React JS</b> est une librairie JavaScript Open Source<br/>
+                      qui vise à simplifier le développement d'interfaces visuelles.<br/>
+                      Développé sur Facebook et commercialisé en 2013, <br/>
+                      il gère certaines des applications les plus utilisées,<br/>
+                      notamment Facebook et Instagram, parmi d'innombrables autres applications.<br/><br/>
+                      Alors que j'utilise <b>React JS</b> pour concevoir des <b>sites internet</b><br/>
+                      ou des <b>webapps, React Native</b> permet de concevoir<br/>
+                      des <b>applications mobiles</b> et <b>tablettes</b>.
+                    </p>
                 </div>
               </div>
               <div className="row spacing-section">
@@ -77,28 +90,33 @@ class App extends React.Component {
                     <h4>Les avantages</h4>
                     <h3>Développement React JS</h3>
                       <p className="spacing">
-                        Créer un <b>site internet</b> ou une <b>webapp</b> en <b>React JS</b> est un choix stratégique qui pourrait bien faire la différence grâce à :
+                        Créer un <b>site internet</b> ou une <b>WebApp</b> en <b>React JS</b> est un choix stratégique.<br/>
+                        Les faibles coûts de développement, l'utilisation des données, l'espace de stockage et autres ne sont pas les seuls avantages des <b>PWA</b>. :
                       </p>
                       <div>
                         <ol>
                           <li>
                             <span>
-                              <b>La logique composants</b> pour les designers et développeurs, ce qui se traduit par une uniformisation du support et  gain de temps tout au long du projet.
+                              <b>Des performance imbattable</b>: le Vitual DOM permet de savoir ce qui change vraiment 
+                              dans votre interface utilisateur et restitue le rendu de ce qui a vraiment changé, d'où de meilleures performances.
                             </span>
                           </li>
                           <li>
                             <span>
-                              <b>Un temps de chargement très court</b> : les utilisateurs devenant de plus en plus exigeants, afficher une page instantanément est devenu indispensable et la vitesse de chargement de la page s’en voit considérablement optimisée grâce à React JS et son DOM virtuel qui charge uniquement les parties « interactives ».
+                              <b>Bon pour le référencement</b> : le référencement est le pilier d'une entreprise prospère.
+                              Un meilleure classement équivaut à une plus grande implication des personnes, ce qui génère plus de revenus.
+                              ReactJS offre relativement une vitesse plus rapide en réduisant le temps de chargement de la page, ce qui permet d'utiliser le référencement de manière utile.
                             </span>
                           </li>
                           <li>
                             <span>
-                              <b>Une expérience utilisateur plus fluide</b> : le site s’apparente à une web application pour mieux guider et convertir l’utilisateur.
+                              <b>Mode hors ligne</b> : Une PWA enregistre le cache du site Web, ce qui permet aux utilisateurs d'accéder à tout le contenu en l'absence d'une connectivité médiocre ou inexistante.
                             </span>
                           </li>
                           <li>
                             <span>
-                             <b>Une maintenance et des évolutions facilitées</b> grâce à un code propre dû à un code structuré et organisé.
+                             <b>Sécurité renforcée</b> La principale exigence d'un site Web pour s'appeler une application Web progressive est qu'il doit être sécurisé par HTTPS. 
+                             L'activation de HTTPS assure la sécurité des données et réduit le risque de problèmes de sécurité ou de falsification des données..
                             </span>
                           </li>
                         </ol>
@@ -116,31 +134,32 @@ class App extends React.Component {
                       <h4>Les avantages</h4>
                       <h3>Développement React Native</h3>
                         <p className="spacing">
-                          <b>React Native</b> découle de <b>React JS</b> et permet de créer des 
-                          <b>applications mobiles hybrides, de bureau ou interactives</b>, avec un seul et même code commun (iOS, Windows, Android par exemple), 
-                          tout en pouvant développer un langage spécifique à chaque OS.
+                          Suivant <b>ReactJS</b>, <b>React Native</b> est un cadre de développement d'applications mobiles multiplates-formes pour iOS et Android.
+                          Si vous souhaitez économiser du temps, de l'argent et des ressources en personnel, alors React Native est la solution idéale pour vous.
                         </p>
                         <div>
-                          <p className="spacing">Cela permet ainsi :</p>
                           <ol>
                             <li>
                               <span>
-                                <b>Un gain de temps considérable </b>: React Native permet de coder une seule fois pour plusieurs plateformes.
+                                <b>Gagnez du temps et de l'argent  </b>: avec React Native, le même code est utilisé pour le déploiement sur les plateformes iOS et Android. 
+                                Vous économisez du temps et de l’argent en raccourcissant le cycle de développement.
                               </span>
                             </li>
                             <li>
                               <span>
-                                <b>Une flexibilité </b>: React Native laisse la possibilité d’intégrer des fonctionnalités natives pour offrir une expérience utilisateur encore plus poussée.
+                                <b>Vitesse et performance </b>: C’est probablement la raison la plus importante de choisir React Native pour votre projet. 
+                                React Native est léger, extrêmement rapide, et ne consomme pas trop de ressources.
                               </span>
                             </li>
                             <li>
                               <span>
-                                <b>Une performance comparable à une application native </b>: même entièrement développée en React Native, l’application hybride sera tout aussi performante qu’une application native grâce à sa compilation et à son interprétation pour les différents OS.
+                                <b>Fiabilité </b>: React Native est largement adopté par les développeurs et les grandes entreprises, ce qui en fait un cadre mobile très fiable. 
+                                Il n'y a aucune chance que cette technologie disparaisse dans quelques années, car Facebook a des projets ambitieux pour son développement ultérieur.
                               </span>
                             </li>
                             <li>
                               <span>
-                                <b>Des évolutions facilitées </b>: React Native fonctionne avec la logique de composants qui sont à la fois réutilisables, modifiables, interchangeables… ce qui facilite considérablement la maintenance des applications.
+                                <b>Ajouter des plugins tiers </b>: React Native vous permet également d'intégrer facilement des plug-ins et des API tiers, notamment des cartes et des systèmes de paiement.
                               </span>
                             </li>
                           </ol>
@@ -155,43 +174,49 @@ class App extends React.Component {
               <p>Les sujets sur lesquels je vais pouvoir vous aider.</p>   
             </header>
             <ul className="skills-list">
-              <li>Javascript</li>
-              <li>Node.js</li>
-              <li>Framework <strong>React.js</strong> / <strong>React Native</strong></li>
-              <li>Framework <strong>Redux</strong></li>
-              <li><strong>HTML5</strong> / <strong>CSS3</strong></li>
-              <li>Responsive Web</li>
-              <li>Framework <strong>Bootstrap</strong></li>
+              <li>Front-end <strong>HTML</strong> / <strong>CSS</strong> / <strong>Javascript</strong></li>
               <li>Préprocesseurs <strong>Sass</strong></li>
-              <li>PHP <strong>POO</strong> / <strong>MVC</strong></li>
-              <li>Framework <strong>Laravel</strong></li>
-              <li>SQL <strong>MYSQL</strong></li>
-              <li>CMS <strong>WordPress</strong></li>
-              <li>Outil <strong>Photoshop</strong> / <strong>VSCode</strong> / <strong>Android Studio</strong></li>
+              <li>Frameworks <strong>React.js</strong>  / <strong>React Native</strong> / <strong>Redux</strong> / <strong>Bootstrap</strong></li>
+              <li>Back-end <strong>Node.js</strong></li>
+              <li>Framework <strong>Express</strong></li>
+              <li>Base de données <strong>MongoDB</strong></li>
+              <li>API <strong>WebSockets</strong></li>
+              <li>IDE <strong>VSCode</strong></li>
+              <li>Méthodologie Agile <strong>SCRUM</strong></li>
+              <li>Outils <strong>Git</strong> / <strong>Photoshop</strong></li>
               <li>...</li>
             </ul>
           </section>
 
-          <section id="portfolio">
+          <section id="portfolio" className="centered-container">
             <header className="section-header">
               <h2>Portfolio</h2>
               <p>Une sélection de projets sur lesquels j'ai pu intervenir. (en cours)</p>   
             </header>
             <div className="grid">
               <div class="container_image">
-                <img src={ima}/>
+                <img src={ima} className="image"/>
+                <div class="middle">
+                  <div class="text">IVTracer</div>
+                </div>
               </div>
               <div class="container_image">
-                <img src={bps}/>
+                <img src={bps} className="image"/>
+                <div class="middle">
+                  <div class="text">Bretagne Pompes Services</div>
+                </div>
               </div>
               <div class="container_image">
-                <img src={lta}/>
+                <img src={lta} className="image"/>
+                <div class="middle">
+                  <div class="text">Léon Trégor Athlétisme</div>
+                </div>
               </div>
               <div class="container_image">
-                <img src={lta}/>
-              </div>
-              <div class="container_image">
-                <img src={lta}/>
+                <img src={lta} className="image"/>
+                <div class="middle">
+                  <div class="text">John Doe</div>
+                </div>
               </div>
             </div>
           </section>

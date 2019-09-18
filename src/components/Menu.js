@@ -5,7 +5,8 @@ export default class Menu extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            active: false
+            active: false,
+            toggle: false
         }
     }
 
@@ -13,8 +14,13 @@ export default class Menu extends React.Component{
         this.setState({ active: !this.state.active })
     }
 
+    _toggle = () => {
+        this.setState({ toggle: !this.state.toggle })
+    }
+
     render() {
         const active = this.state.active ? 'active' : ''
+        const toggle = this.state.toggle ? 'show' : ''
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (
                 <a href={link.link}>{link.label}</a>
@@ -23,7 +29,7 @@ export default class Menu extends React.Component{
             );
 
             return (
-                <li key={index} className={`${active}`} onClick={this._active}>
+                <li>
                     {linkMarkup}
                 </li>
             );
@@ -31,7 +37,12 @@ export default class Menu extends React.Component{
 
         return (
             <nav>
-                <ul id="top-menu">
+                <div className="logo">Jeremyvinec</div>
+                <div className="menu-btn" onClick={this._toggle}>
+                    ...
+                </div>
+
+                <ul id="top-menu" className={`${toggle}`}>
                     {linksMarkup}
                 </ul>
             </nav>

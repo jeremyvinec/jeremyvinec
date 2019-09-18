@@ -8,11 +8,15 @@
 	src: url('../fonts/TitilliumWeb-Regular.ttf')
 }
 
+*{
+	margin: 0;
+	padding: 0;
+  }
+
 body{
 	margin: 0;
 	padding: 0;
     transition: margin-left 0.2s;
-    padding: 20px;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
 
@@ -113,4 +117,8 @@ nav li + li {
 
 .margin-p{
 	margin-top:20px;
+}
+
+img {
+	width: 100%;
 }
