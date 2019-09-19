@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './components/Menu'
+import Cover from './components/Cover'
 import Footer from './components/Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,6 +30,7 @@ class App extends React.Component {
             <Menu links={links}></Menu>
           </header>
           <main className="container">
+            <Cover/>
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h2>À propos</h2>

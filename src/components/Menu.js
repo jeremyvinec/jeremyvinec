@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisH, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default class Menu extends React.Component{
 
@@ -42,7 +42,7 @@ export default class Menu extends React.Component{
                 <div className="logo">Jeremyvinec</div>
                 <input type="checkbox" id="chk"></input>
                 <label for="chk" className="show-menu-btn" onClick={this._toggle}>
-                    <FontAwesomeIcon icon={faEllipsisH}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </label>
 
                 <ul id="top-menu" className={`${toggle}`}>
@@ -51,6 +51,12 @@ export default class Menu extends React.Component{
                         <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
                     </label>
                 </ul>
+
+                <label className="menu-btn-contact">
+                    <a href="/Contact">
+                        <FontAwesomeIcon icon={faEnvelope}/>
+                    </a>
+                </label>
             </nav>
         );
     }

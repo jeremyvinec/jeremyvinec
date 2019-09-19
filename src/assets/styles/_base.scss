@@ -11,6 +11,12 @@
 @media screen and (max-width: 800px){
 	.col{
 		flex-basis: auto;
+		padding: 0 20px;
+	}
+
+	.col-2, .col-8{
+		flex: auto;
+		max-width: none;
 	}
 }
 
@@ -29,26 +35,26 @@ body{
 }
 
 h1{
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: auto;
 	font-family: "Honey Script";
 }
 
 h2{
-	font-size: 30px;
+	font-size: 1.75rem;
 	text-transform: uppercase;
 	font-weight: 600;
 	margin: auto;
 }
 
 h3{
-	font-size: 2.125rem;
+	font-size: 1.75rem;
     line-height: 2.75rem;
 	margin: auto;
 }
 
 h4{
-	font-size: .85em;
+	font-size: 0.8em;
 	text-transform: uppercase;
 	margin: auto;
 	letter-spacing: .0625rem;
@@ -62,8 +68,16 @@ h5{
 }
 
 p{
-	font-size: 15px;
+	font-size: 0.8rem;
 	margin: auto;
+}
+
+span {
+	font-size: 0.8rem;
+}
+
+a{
+	color: #fff;
 }
 
 a:hover{

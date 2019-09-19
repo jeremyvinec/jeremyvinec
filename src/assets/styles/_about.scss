@@ -66,3 +66,11 @@
 .button_submit a:hover span{
 	left: 120%;
 }
+
+@media screen and (max-width: 800px){
+	.img-profil{
+		width: 30%;
+		margin: 3em 0;
+		float: left;
+	}
+}
