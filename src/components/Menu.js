@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisH, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default class Menu extends React.Component{
 
@@ -38,12 +40,16 @@ export default class Menu extends React.Component{
         return (
             <nav>
                 <div className="logo">Jeremyvinec</div>
-                <div className="menu-btn" onClick={this._toggle}>
-                    ...
-                </div>
+                <input type="checkbox" id="chk"></input>
+                <label for="chk" className="show-menu-btn" onClick={this._toggle}>
+                    <FontAwesomeIcon icon={faEllipsisH}></FontAwesomeIcon>
+                </label>
 
                 <ul id="top-menu" className={`${toggle}`}>
                     {linksMarkup}
+                    <label for="chk" class="hide-menu-btn" onClick={this._toggle}>
+                        <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+                    </label>
                 </ul>
             </nav>
         );

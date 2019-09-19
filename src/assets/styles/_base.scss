@@ -8,6 +8,12 @@
 	src: url('../fonts/TitilliumWeb-Regular.ttf')
 }
 
+@media screen and (max-width: 800px){
+	.col{
+		flex-basis: auto;
+	}
+}
+
 *{
 	margin: 0;
 	padding: 0;
