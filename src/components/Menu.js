@@ -21,7 +21,6 @@ export default class Menu extends React.Component{
     }
 
     render() {
-        const active = this.state.active ? 'active' : ''
         const toggle = this.state.toggle ? 'show' : ''
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (

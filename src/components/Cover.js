@@ -1,4 +1,5 @@
 import React from 'react'
+import { Controller, Scene } from 'scrollmagic';
 
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
 const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>
@@ -10,8 +11,8 @@ const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</sp
 export default class Cover extends React.Component{
     render(){
         return(
-            <section>
-            <div className="cover">
+            <section className="cover">
+                <div className="centered-container">
                         <h3>Développement web et app</h3>
                         <h2>ReactJS et React Native</h2>
                         <br />
@@ -24,7 +25,7 @@ export default class Cover extends React.Component{
                         <p><Gray> 6</Gray>      <Yellow>email</Yellow><Pink> : </Pink> <Green>' jeremy.yvinec@gmail.com '</Green><Gray>,</Gray></p>
                         <p><Gray> 7</Gray>      <Yellow>website</Yellow><Pink> : </Pink> <Green>' jeremyvinec.dev '</Green></p>
                         <p><Gray> 8</Gray>  <Gray>})</Gray><Pink>.</Pink><Lightblue>start</Lightblue><Gray>()</Gray></p>
-                    </div>
+                </div>
             </section>
         )
     }

@@ -9,8 +9,8 @@ import { faFacebook, faTwitter, faLinkedin, faGithub, faInstagram } from '@forta
 
 import photo from './assets/img/photo.png'
 import cv from './assets/img/cv.png' 
-import webapp from './assets/img/progressive-web-app.png'
-import mobile from './assets/img/webdesign-ui.png'
+import webapp from './assets/img/webapp.jpg'
+import mobile from './assets/img/mobile.jpg'
 import lta from './assets/img/lta.jpg'
 import bps from './assets/img/maquette-bps.png'
 import ima from './assets/img/ivtracer-app.png'
@@ -28,9 +28,12 @@ class App extends React.Component {
       <div>
           <header className="header">
             <Menu links={links}></Menu>
+            <div>
+              <h3>Développement web et app</h3>
+              <h2>ReactJS et React Native</h2>
+            </div>
           </header>
           <main className="container">
-            <Cover/>
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h2>À propos</h2>
@@ -125,7 +128,7 @@ class App extends React.Component {
                       </div>
                   </div>
                   <div className="col text-left">
-                    <img src={webapp} width="446"/>
+                    <img src={webapp}/>
                   </div>
               </div>
               <div className="row spacing-section">
