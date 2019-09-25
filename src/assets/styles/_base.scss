@@ -23,7 +23,7 @@
 *{
 	margin: 0;
 	padding: 0;
-  }
+}
 
 body{
 	margin: 0;
@@ -82,6 +82,7 @@ a{
 
 a:hover{
 	text-decoration: none;
+	color: #2bb573;
 }
 
 ol{
@@ -98,6 +99,10 @@ nav ul li {
 
 nav li + li {
 	margin-left: 3em;
+}
+
+svg{
+	vertical-align: inherit;
 }
 
 .centered-container{

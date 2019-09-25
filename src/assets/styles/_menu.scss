@@ -1,5 +1,69 @@
-.logo{
+nav{
     line-height: 3.75rem;
+}
+
+.button_submit{
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	margin-top: 60px;
+	margin-left: 105px;
+	text-transform: uppercase;
+	width: 205px;
+}
+.button_submit a{
+	font-size: 15px;
+	text-decoration: none;
+	color: #2bb573;
+}
+
+.button_submit a:after, .button_submit a:before{
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	transition: .8s;
+	opacity: 0;
+}
+
+.button_submit a:before {
+	content: '';
+	top: 0;
+	left: 0;
+	border-top: 1px solid #2bb573;
+	border-left: 1px solid #2bb573;
+	box-sizing: border-box;
+}
+
+.button_submit a:after {
+	content: '';
+	bottom: 0;
+	right: 0;
+	border-bottom: 1px solid #2bb573;
+	border-right: 1px solid #2bb573;
+	box-sizing: border-box;
+}
+
+.button_submit a:hover:before, .button_submit a:hover:after{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+.button_submit a span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -120%;
+	transition: 1s;
+	background: rgba(255, 255, 255, .7);
+	transform: skewX(6deg);
+}
+
+.button_submit a:hover span{
+	left: 120%;
+}
+
+.logo{
     font-family: "Honey Script", Sans-Serif;
 	color: #71cee6;
 	font-size: 2rem;
@@ -13,21 +77,27 @@
 }
 
 .show-menu-btn{
-    line-height: 3.75rem;
-    float: left;
-    font-size: 1.25rem;
-    color: #71cee6;
+    //float: left;
+    font-size: 1.25rem; 
+    color: #fff; //71cee6
+    border: .0625rem solid rgba(255,255,255,0.3);
+    height: 3.125rem;
+    width: 3.125rem;
+    margin-bottom: 1.5625rem;
+    border-radius: 50%;
 }
 
 .menu-btn-contact{
-    line-height: 3.75rem;
-    float: left;
     font-size: 1.25rem;
-    color: #71cee6;
+    color: #fff;
+    border: .0625rem solid rgba(255,255,255,0.3);
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
 }
 
 #top-menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover{
-    color: #3498db;
+    color: #2bb573;
 }
 
 #chk{
@@ -108,6 +178,10 @@
 
     .menu-btn-contact{
         float: right;
+    }
+
+    .show-menu-btn{
+        float: left;
     }
 
   }
