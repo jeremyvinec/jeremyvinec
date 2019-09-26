@@ -8,7 +8,49 @@
 	src: url('../fonts/TitilliumWeb-Regular.ttf')
 }
 
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/PlayfairDisplay-Regular.ttf')
+}
+
 @media screen and (max-width: 800px){
+
+	h1{
+		font-size: 1.75em;
+		margin: auto;
+		font-family: "Honey Script";
+	}
+	
+	h2{
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: auto;
+	}
+	
+	h4{
+		font-size: 0.8em;
+		text-transform: uppercase;
+		margin: auto;
+		letter-spacing: .0625rem;
+		color: #71cee6;
+	}
+	
+	h5{
+		font-size: 20px;
+		text-transform: uppercase;
+		margin: auto;
+	}
+	
+	p{
+		font-size: 0.8rem;
+		margin: auto;
+	}
+	
+	span {
+		font-size: 0.8rem;
+	}
+
 	.col{
 		flex-basis: auto;
 		padding: 0 20px;
@@ -35,22 +77,22 @@ body{
 }
 
 h1{
-	font-size: 1.8em;
+	font-size: 3.125rem;
+	font-family: 'Playfair Display', serif;
 	margin: auto;
-	font-family: "Honey Script";
 }
 
 h2{
 	font-size: 1.75rem;
-	text-transform: uppercase;
-	font-weight: 600;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 	margin: auto;
 }
 
 h3{
 	font-size: 1.75rem;
-    line-height: 2.75rem;
 	margin: auto;
+	text-transform: uppercase;
 }
 
 h4{
@@ -68,12 +110,12 @@ h5{
 }
 
 p{
-	font-size: 0.8rem;
+	font-size: 0.875rem;
 	margin: auto;
 }
 
 span {
-	font-size: 0.8rem;
+	font-size: 0.875rem;
 }
 
 a{
@@ -99,10 +141,6 @@ nav ul li {
 
 nav li + li {
 	margin-left: 3em;
-}
-
-svg{
-	vertical-align: inherit;
 }
 
 .centered-container{

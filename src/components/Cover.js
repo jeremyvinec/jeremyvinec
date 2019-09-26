@@ -1,5 +1,5 @@
 import React from 'react'
-import { Controller, Scene } from 'scrollmagic';
+//import { Controller, Scene } from 'scrollmagic';
 
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
 const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>

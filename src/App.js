@@ -27,16 +27,17 @@ class App extends React.Component {
     return (
       <div>
           <header className="header">
+            <div className="header_img"/>
             <Menu links={links}></Menu>
             <div>
-              <h3>Développement web et app</h3>
-              <h2>ReactJS et React Native</h2>
+              <h2>Développement web et app</h2>
+              <h1>ReactJS et React Native</h1>
             </div>
           </header>
           <main className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">
-                <h2>À propos</h2>
+                <h3>À propos</h3>
                 <p>Les sujets sur lesquels je vais pouvoir vous aider.</p>   
               </header>
               <div className="row">
@@ -44,8 +45,8 @@ class App extends React.Component {
                   <img className="img-profil" src={photo} alt="Moi"/>
                 </div>
                 <div className="col-8 text-left">
-                  <h5>JEREMY YVINEC</h5>
-                  <h5>DÉVELOPPEUR FRONT-END</h5>
+                  <h5>Jérémy Yvinec</h5>
+                  <h5>Développeur Front-End</h5>
                   <p className="spacing">
                     Développeur passionné depuis quelques années,<br/> ma passion de l'informatique m'a poussé à approfondir<br/> mes connaissances.<br/><br/>
                     J'ai un faible pour les projets ambitieux et mes technologies de prédilection actuelles sont : mobile (React Native), back-end (NodeJS, MongoDB) et React.js pour le front-end.<br/><br/>
@@ -63,7 +64,7 @@ class App extends React.Component {
 
             <section id="services">
               <header className="section-header">
-                <h2>Services</h2>
+                <h3>Services</h3>
                 <p>ReactJS & React Native</p>   
               </header>
               <div className="row">
@@ -77,7 +78,7 @@ class App extends React.Component {
                 </div>
                 <div className="col text-left">
                   <h4>Les avantages</h4>
-                  <h3>React JS & React Native</h3>
+                  <h2>React JS & React Native</h2>
                   <p className="spacing">
                       Brièvement, <b>React JS</b> est une librairie JavaScript Open Source<br/>
                       qui vise à simplifier le développement d'interfaces visuelles.<br/>
@@ -93,7 +94,7 @@ class App extends React.Component {
               <div className="row spacing-section">
                   <div className="col text-left">
                     <h4>Les avantages</h4>
-                    <h3>Développement React JS</h3>
+                    <h2>Développement React JS</h2>
                       <p className="spacing">
                         Créer un <b>site internet</b> ou une <b>WebApp</b> en <b>React JS</b> est un choix stratégique.<br/>
                         Les faibles coûts de développement, l'utilisation des données, l'espace de stockage et autres ne sont pas les seuls avantages des <b>PWA</b>. :
@@ -137,7 +138,7 @@ class App extends React.Component {
                     </div>
                     <div className="col text-left">
                       <h4>Les avantages</h4>
-                      <h3>Développement React Native</h3>
+                      <h2>Développement React Native</h2>
                         <p className="spacing">
                           Suivant <b>ReactJS</b>, <b>React Native</b> est un cadre de développement d'applications mobiles multiplates-formes pour iOS et Android.
                           Si vous souhaitez économiser du temps, de l'argent et des ressources en personnel, alors React Native est la solution idéale pour vous.
@@ -175,7 +176,7 @@ class App extends React.Component {
 
             <section id="competences" className="centered-container">
             <header className="section-header">
-              <h2>Compétences</h2>
+              <h3>Compétences</h3>
               <p>Les sujets sur lesquels je vais pouvoir vous aider.</p>   
             </header>
             <ul className="skills-list">
@@ -195,7 +196,7 @@ class App extends React.Component {
 
           <section id="portfolio" className="centered-container">
             <header className="section-header">
-              <h2>Portfolio</h2>
+              <h3>Portfolio</h3>
               <p>Une sélection de projets sur lesquels j'ai pu intervenir. (en cours)</p>   
             </header>
             <div className="grid">
@@ -228,7 +229,7 @@ class App extends React.Component {
 
           <section id="contact">
             <header className="section-header">
-              <h2>Contact</h2>
+              <h3>Contact</h3>
               <p>Et si on travaillait ensemble ?</p>   
             </header>
             <div>

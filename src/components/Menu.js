@@ -51,9 +51,8 @@ export default class Menu extends React.Component{
                     </label>
                 </ul>
 
-                <label className="menu-btn-contact button_submit">
+                <label className="menu-btn-contact">
                     <a href="/Contact">
-                        <span/>
                         <FontAwesomeIcon icon={faEnvelope}/>
                     </a>
                 </label>
