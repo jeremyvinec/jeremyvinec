@@ -8,7 +8,7 @@ export default class Menu extends React.Component{
         super(props)
         this.state = {
             active: false,
-            toggle: false
+            invert: false
         }
     }
 
@@ -16,12 +16,20 @@ export default class Menu extends React.Component{
         this.setState({ active: !this.state.active })
     }
 
-    _toggle = () => {
-        this.setState({ toggle: !this.state.toggle })
+    _invert = () => {
+        this.setState({ invert: !this.state.invert })
     }
 
+    _handleScroll = e => {
+        console.log('ok')
+        let element = e.target
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+            this.setState({ invert: !this.state.invert })
+        }
+      }
+
     render() {
-        const toggle = this.state.toggle ? 'show' : ''
+        const invert = this.state.invert ? 'invert' : ''
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (
                 <a href={link.link}>{link.label}</a>
@@ -37,21 +45,20 @@ export default class Menu extends React.Component{
         });
 
         return (
-            <nav>
-                <div className="logo">Jeremyvinec</div>
+            <nav onScroll={this._handleScroll}>
                 <input type="checkbox" id="chk"></input>
                 <label for="chk" className="show-menu-btn" onClick={this._toggle}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </label>
 
-                <ul id="top-menu" className={`${toggle}`}>
+                <ul id="top-menu">
                     {linksMarkup}
-                    <label for="chk" class="hide-menu-btn" onClick={this._toggle}>
+                    <label for="chk" className={`hide-menu-btn ${invert}`} onClick={this._toggle}>
                         <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
                     </label>
                 </ul>
 
-                <label className="menu-btn-contact">
+                <label className={`menu-btn-contact ${invert}`}>
                     <a href="/Contact">
                         <FontAwesomeIcon icon={faEnvelope}/>
                     </a>

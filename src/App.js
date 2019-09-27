@@ -28,13 +28,14 @@ class App extends React.Component {
       <div>
           <header className="header">
             <div className="header_img"/>
+            <div className="logo">Jeremyvinec</div>
             <Menu links={links}></Menu>
-            <div>
+            <div className="header_title">
               <h2>Développement web et app</h2>
               <h1>ReactJS et React Native</h1>
             </div>
           </header>
-          <main className="container">
+          <main id="main" className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h3>À propos</h3>
@@ -140,7 +141,7 @@ class App extends React.Component {
                       <h4>Les avantages</h4>
                       <h2>Développement React Native</h2>
                         <p className="spacing">
-                          Suivant <b>ReactJS</b>, <b>React Native</b> est un cadre de développement d'applications mobiles multiplates-formes pour iOS et Android.
+                          Suivant <b>ReactJS</b>, <b>React Native</b> est un cadre de développement d'applications mobiles multi-plateformes pour iOS et Android.
                           Si vous souhaitez économiser du temps, de l'argent et des ressources en personnel, alors React Native est la solution idéale pour vous.
                         </p>
                         <div>
