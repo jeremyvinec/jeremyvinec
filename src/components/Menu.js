@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faTwitter, faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default class Menu extends React.Component{
 
@@ -32,13 +33,13 @@ export default class Menu extends React.Component{
         const invert = this.state.invert ? 'invert' : ''
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (
-                <a href={link.link}>{link.label}</a>
+                <a href={link.link} key={index}>{link.label}</a>
             ) : (
-                <a href={link.link}>{link.label}</a>
+                <a href={link.link} key={index}>{link.label}</a>
             );
 
             return (
-                <li>
+                <li className="menu-item">
                     {linkMarkup}
                 </li>
             );
@@ -47,16 +48,29 @@ export default class Menu extends React.Component{
         return (
             <nav onScroll={this._handleScroll}>
                 <input type="checkbox" id="chk"></input>
-                <label for="chk" className="show-menu-btn" onClick={this._toggle}>
+                <label htmlFor="chk" className="show-menu-btn" onClick={this._toggle}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </label>
 
-                <ul id="top-menu">
-                    {linksMarkup}
-                    <label for="chk" className={`hide-menu-btn ${invert}`} onClick={this._toggle}>
-                        <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
-                    </label>
-                </ul>
+                <div id="top-menu">
+                    <ul className="line-nav">
+                        {linksMarkup}
+                        <label htmlFor="chk" className={`hide-menu-btn ${invert}`} onClick={this._toggle}>
+                            <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+                        </label>
+                    </ul>
+                    <div className="nav-social-media">
+                        <div className="social-title">Réseaux sociaux</div>
+                        <div className="intro">Je raconte ma vie par ici</div>
+                        <ul>
+                            <li><a href="https://www.facebook.com/jeremy.yvinec" target="_blank"><FontAwesomeIcon icon={faFacebook} aria-hidden="true"></FontAwesomeIcon></a></li>
+                            <li><a href="https://twitter.com/Jeremyvinec" target="_blank"><FontAwesomeIcon icon={faTwitter} aria-hidden="true"></FontAwesomeIcon></a></li>
+                            <li><a href="https://www.instagram.com/jeremyvinec/" target="_blank"><FontAwesomeIcon icon={faInstagram} aria-hidden="true"></FontAwesomeIcon></a></li>
+                            <li><a href="https://www.linkedin.com/in/jeremyvinec/" target="_blank"><FontAwesomeIcon icon={faLinkedin} aria-hidden="true"></FontAwesomeIcon></a></li>
+                            <li><a href="https://github.com/jeremyvinec" target="_blank"><FontAwesomeIcon icon={faGithub} aria-hidden="true"></FontAwesomeIcon></a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <label className={`menu-btn-contact ${invert}`}>
                     <a href="/Contact">

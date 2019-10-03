@@ -25,7 +25,7 @@ class App extends React.Component {
       { label: 'Contact', link: '#contact'},
     ]
     return (
-      <div>
+      <div id="content">
           <header className="header">
             <div className="header_img"/>
             <div className="logo">Jeremyvinec</div>
@@ -35,7 +35,7 @@ class App extends React.Component {
               <h1>ReactJS et React Native</h1>
             </div>
           </header>
-          <main id="main" className="container">
+          <main className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h3>À propos</h3>
