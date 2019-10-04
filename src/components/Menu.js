@@ -8,29 +8,24 @@ export default class Menu extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            active: false,
-            invert: false
+            color: 'white',
+            borderColor: 'rgba(255, 255, 255, 0.3)'
         }
     }
 
-    _active = () => {
-        this.setState({ active: !this.state.active })
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent)
     }
 
-    _invert = () => {
-        this.setState({ invert: !this.state.invert })
-    }
-
-    _handleScroll = e => {
-        console.log('ok')
-        let element = e.target
-        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-            this.setState({ invert: !this.state.invert })
+    listenScrollEvent = e => {
+        if (window.scrollY > 500) {
+          this.setState({color: 'black', borderColor: 'rgba(30,29,32,0.2)' })
+        } else {
+          this.setState({color: 'white', borderColor: 'rgba(255, 255, 255, 0.3)' })
         }
-      }
+    }
 
     render() {
-        const invert = this.state.invert ? 'invert' : ''
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (
                 <a href={link.link} key={index}>{link.label}</a>
@@ -44,18 +39,19 @@ export default class Menu extends React.Component{
                 </li>
             );
         });
+        const { color, borderColor } = this.state
 
         return (
-            <nav onScroll={this._handleScroll}>
+            <nav>
                 <input type="checkbox" id="chk"></input>
-                <label htmlFor="chk" className="show-menu-btn" onClick={this._toggle}>
+                <label htmlFor="chk" className="show-menu-btn" style={{color: color, borderColor: borderColor}}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </label>
 
                 <div id="top-menu">
                     <ul className="line-nav">
                         {linksMarkup}
-                        <label htmlFor="chk" className={`hide-menu-btn ${invert}`} onClick={this._toggle}>
+                        <label htmlFor="chk" className="hide-menu-btn" style={{color: color, borderColor: borderColor}}>
                             <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
                         </label>
                     </ul>
@@ -72,10 +68,8 @@ export default class Menu extends React.Component{
                     </div>
                 </div>
 
-                <label className={`menu-btn-contact ${invert}`}>
-                    <a href="/Contact">
-                        <FontAwesomeIcon icon={faEnvelope}/>
-                    </a>
+                <label className="menu-btn-contact" style={{color: color, borderColor: borderColor}}>
+                    <FontAwesomeIcon icon={faEnvelope}/>
                 </label>
             </nav>
         );

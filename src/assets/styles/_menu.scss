@@ -1,6 +1,7 @@
 nav{
     position: fixed;
     padding-top: 1.5rem;
+    width: 100%;
     top: 0;
     z-index: 1;
 }
@@ -95,18 +96,11 @@ nav{
     line-height: 1.5rem;
 }
 
-#content {
-    //transition: margin-left .5s;
-    margin-left: 0;
-}
-
 #chk:checked ~ #top-menu {
     left: 0;
-}
-
-#chk:checked ~ #content {
-    margin-left: 250px;
-    background-color: rgba(0,0,0,0.4);
+    #content {
+        margin-left: 250px;
+    }
 }
 
 .header{

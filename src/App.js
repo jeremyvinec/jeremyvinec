@@ -16,6 +16,7 @@ import bps from './assets/img/maquette-bps.png'
 import ima from './assets/img/ivtracer-app.png'
 
 class App extends React.Component {
+
   render(){
     let links = [
       { label: 'À propos', link: '#a_propos', active: true},
@@ -24,6 +25,7 @@ class App extends React.Component {
       { label: 'Portfolio', link: '#portfolio'},
       { label: 'Contact', link: '#contact'},
     ]
+    
     return (
       <div id="content">
           <header className="header">
