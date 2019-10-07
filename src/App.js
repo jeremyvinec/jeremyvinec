@@ -29,14 +29,16 @@ class App extends React.Component {
     return (
       <div id="content">
           <header className="header">
-            <div className="header_img"/>
             <div className="logo">Jeremyvinec</div>
-            <Menu links={links}></Menu>
-            <div className="header_title">
-              <h2>Développement web et app</h2>
-              <h1>ReactJS et React Native</h1>
-            </div>
+              <Menu links={links}></Menu>
           </header>
+          <section className="fat-header">
+              <div className="header_img"/>
+              <div className="header_title">
+              <h2>Développement web et app</h2>
+              <h1>ReactJS & React Native</h1>
+            </div>
+          </section>
           <main className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">

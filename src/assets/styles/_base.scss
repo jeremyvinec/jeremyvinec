@@ -13,6 +13,14 @@
 	src: url('../fonts/PlayfairDisplay-Regular.ttf')
 }
 
+@media (min-width: 960px){
+	
+	.container {
+		max-width: 940px;
+	}
+}
+
+
 @media screen and (max-width: 800px){
 
 	h1{

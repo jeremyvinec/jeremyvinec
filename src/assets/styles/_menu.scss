@@ -1,6 +1,5 @@
 nav{
     position: fixed;
-    padding-top: 1.5rem;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -28,6 +27,8 @@ nav{
     margin-bottom: 1.5625rem;
     border-radius: 50%;
     line-height: 3.125rem;
+    margin-left: 1.5625rem;
+    margin-top: 1.5625rem;
 }
 
 .menu-btn-contact{
@@ -38,6 +39,7 @@ nav{
     width: 3.125rem;
     border-radius: 50%;
     line-height: 3.125rem;
+    margin-left: 1.5625rem;
 }
 
 #top-menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover{
@@ -101,35 +103,6 @@ nav{
     #content {
         margin-left: 250px;
     }
-}
-
-.header{
-    position: relative;
-    height: 600px;
-    background-color: #1e1d20;
-    color: #fff;
-    padding: 20px 20px 0 20px;
-    z-index: 1;
-}
-
-.header_img {
-    background-image: url('../img/background.jpeg');
-    height: 600px;
-    background-size: cover;
-    opacity: 0.7;
-    transform: matrix(1.00903, 0, 0, 1.00903, 0, 0);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: auto;
-}
-
-.header_title{
-    position: relative;
-    top: 25%;
 }
 
 .invert{
@@ -197,10 +170,16 @@ nav{
 
     .menu-btn-contact{
         float: right;
+        border: none;
+        line-height: 3.75rem;
+        margin: 0
     }
 
     .show-menu-btn{
         float: left;
+        border: none;
+        line-height: 3.75rem;
+        margin: 0;
     }
 
     .hide-menu-btn{
