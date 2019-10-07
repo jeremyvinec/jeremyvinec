@@ -20,7 +20,6 @@
 	}
 }
 
-
 @media screen and (max-width: 800px){
 
 	h1{
@@ -80,7 +79,7 @@ body{
 	padding: 0;
     transition: margin-left 0.2s;
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif
 
 }
 
@@ -155,6 +154,10 @@ nav li + li {
 	max-width: 600px;
 	margin: auto;
 	margin-top: 10em;
+}
+
+.margin-right{
+	margin-right: 400px;
 }
 
 .section-header {

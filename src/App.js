@@ -32,14 +32,14 @@ class App extends React.Component {
             <div className="logo">Jeremyvinec</div>
               <Menu links={links}></Menu>
           </header>
-          <section className="fat-header">
+          <section  className="fat-header">
               <div className="header_img"/>
               <div className="header_title">
               <h2>Développement web et app</h2>
               <h1>ReactJS & React Native</h1>
             </div>
           </section>
-          <main className="container">
+          <main id="slide" className="container">
             <section id="a_propos" className="centered-container">
               <header className="section-header">
                 <h3>À propos</h3>

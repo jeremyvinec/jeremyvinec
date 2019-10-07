@@ -25,6 +25,18 @@ export default class Menu extends React.Component{
         }
     }
 
+    marginLeft = () => {
+        let chk = document.getElementById('chk')
+        let slide = document.getElementById('slide')
+        if (chk.checked === true) {
+            slide.style.marginLeft = 'auto'
+            slide.style.opacity = "1";
+        } else {
+            slide.style.marginLeft = '300px'
+            slide.style.opacity = "0.7";
+        }
+    }
+
     render() {
         let linksMarkup = this.props.links.map((link, index) => {
             let linkMarkup = link.active ? (
@@ -44,14 +56,17 @@ export default class Menu extends React.Component{
         return (
             <nav>
                 <input type="checkbox" id="chk"></input>
-                <label htmlFor="chk" className="show-menu-btn" style={{color: color, borderColor: borderColor}}>
+                <label  htmlFor="chk" 
+                        className="show-menu-btn" 
+                        onClick={this.marginLeft} 
+                        style={{color: color, borderColor: borderColor}}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </label>
 
                 <div id="top-menu">
                     <ul className="line-nav">
                         {linksMarkup}
-                        <label htmlFor="chk" className="hide-menu-btn" style={{color: color, borderColor: borderColor}}>
+                        <label htmlFor="chk" className="hide-menu-btn" onClick={this.marginLeft} style={{color: color, borderColor: borderColor}}>
                             <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
                         </label>
                     </ul>
