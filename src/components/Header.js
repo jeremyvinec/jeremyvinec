@@ -1,43 +1,28 @@
 import React from 'react'
-
-export default class Header extends React.Component{
-
-    constructor(props){
-        super(props)
-        this.state = {
-            offset: 0
-        }
-    }
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.parallaxShift);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.parallaxShift);
-    }
-
-    parallaxShift = () => {
-        this.setState({
-            offset: window.pageYOffset
-        });
-    };
-
+import Menu from './Menu'
+export default class Header extends React.Component {
     render(){
+        let links = [
+            { label: 'À propos', link: '#a_propos', active: true},
+            { label: 'Services', link: '#services'},
+            { label: 'Compétences', link: '#competences'},
+            { label: 'Portfolio', link: '#portfolio'},
+            { label: 'Contact', link: '#contact'},
+          ]
         return(
-            <header 
-                className='header-background'
-                style={{ backgroundPositionY: this.state.offset}}
-            >
-                <section
-                    className='info-container'
-                    style={{ bottom: this.state.offset / 2 }}
-                    >
-                    <h4>Développement web & app</h4>
-                    <h1>Jérémy Yvinec</h1>
-                    <h3>React JS & React Native</h3>
+            <React.Fragment>
+                <header className="header">
+                    <div className="logo">Jeremyvinec</div>
+                    <Menu links={links}></Menu>
+                </header>
+                <section  className="fat-header">
+                    <div className="header_img"/>
+                    <div className="header_title">
+                    <h2>Développement web et app</h2>
+                    <h1>ReactJS & React Native</h1>
+                    </div>
                 </section>
-            </header>
+            </React.Fragment>
         )
     }
 }

@@ -83,9 +83,11 @@ export default class Menu extends React.Component{
                     </div>
                 </div>
 
-                <label className="menu-btn-contact" style={{color: color, borderColor: borderColor}}>
-                    <FontAwesomeIcon icon={faEnvelope}/>
-                </label>
+                <a href="mailto:jeremy.yvinec@gmail.com" title="Cliquer sur ce lien est une bonne idée.">
+                    <label className="menu-btn-contact" style={{color: color, borderColor: borderColor}}>
+                        <FontAwesomeIcon icon={faEnvelope}/>
+                    </label>
+                </a>
             </nav>
         );
     }

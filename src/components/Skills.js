@@ -1,31 +1,26 @@
 import React from 'react'
 
 export default class Skills extends React.Component{
-    redner(){
+    render(){
         return(
             <React.Fragment>
-                <section id="competences" class="centered-container">
-                    <header class="section-header">
-                        <h2>Compétences</h2>
-                        <p>Les sujets sur lesquels je vais pouvoir vous aider.</p>   
-                    </header>
-                    <ul class="skills-list">
-                        <li>Javascript</li>
-                        <li>Node.js</li>
-                        <li>Framework <strong>React.js</strong> / <strong>React Native</strong></li>
-                        <li>Framework <strong>Redux</strong></li>
-                        <li><strong>HTML5</strong> / <strong>CSS3</strong></li>
-                        <li>Responsive Web</li>
-                        <li>Framework <strong>Bootstrap</strong></li>
-                        <li>Préprocesseurs <strong>Sass</strong></li>
-                        <li>PHP <strong>POO</strong> / <strong>MVC</strong></li>
-                        <li>Framework <strong>Laravel</strong></li>
-                        <li>SQL <strong>MYSQL</strong></li>
-                        <li>CMS <strong>WordPress</strong></li>
-                        <li>Outil <strong>Photoshop</strong> / <strong>VSCode</strong> / <strong>Android Studio</strong></li>
-                        <li>...</li>
-                    </ul>
-                </section>
+                <header className="section-header">
+                    <h3>Compétences</h3>
+                    <p>Les sujets sur lesquels je vais pouvoir vous aider.</p>   
+                </header>
+                <ul className="skills-list">
+                <li>Front-end <strong>HTML</strong> / <strong>CSS</strong> / <strong>Javascript</strong></li>
+                <li>Préprocesseurs <strong>Sass</strong></li>
+                <li>Frameworks <strong>React.js</strong>  / <strong>React Native</strong> / <strong>Redux</strong> / <strong>Bootstrap</strong></li>
+                <li>Back-end <strong>Node.js</strong></li>
+                <li>Framework <strong>Express</strong></li>
+                <li>Base de données <strong>MongoDB</strong></li>
+                <li>API <strong>WebSockets</strong></li>
+                <li>IDE <strong>VSCode</strong></li>
+                <li>Méthodologie Agile <strong>SCRUM</strong></li>
+                <li>Outils <strong>Git</strong> / <strong>Photoshop</strong></li>
+                <li>...</li>
+                </ul>
             </React.Fragment>
         )
     }

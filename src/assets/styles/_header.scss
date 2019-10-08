@@ -6,20 +6,20 @@
 
 .fat-header{
     position: relative;
-    height: 20.625rem;
+    height: 19.5rem;
     background-color: #1e1d20;
     overflow: hidden;
-    min-height: 21.875rem;
+    min-height: 19.5rem;
 }
 
 .header_img {
     background-image: url('../img/background.jpeg');
     position: absolute;
-    height: 600px;
+    height: 100%;
     background-size: cover;
     opacity: 0.7;
     transform: matrix(1.00903, 0, 0, 1.00903, 0, 0);
-    background-position: 50%;
+    background-position: bottom;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
