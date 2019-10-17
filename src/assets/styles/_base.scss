@@ -13,6 +13,14 @@
 	src: url('../fonts/PlayfairDisplay-Regular.ttf')
 }
 
+@media (min-width: 1500px){
+	
+	#slide {
+		margin-left: auto !important;
+		opacity: 1 !important;
+	}
+}
+
 @media (min-width: 960px){
 	
 	.container {

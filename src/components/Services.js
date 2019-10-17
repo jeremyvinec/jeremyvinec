@@ -13,7 +13,7 @@ export default class Services extends React.Component{
               </header>
               <div className="row">
                 <div className="col">
-                  <div class="circles">
+                  <div className="circles">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -73,12 +73,12 @@ export default class Services extends React.Component{
                       </div>
                   </div>
                   <div className="col text-left">
-                    <img src={webapp}/>
+                    <img src={webapp} alt='webapp'/>
                   </div>
               </div>
               <div className="row spacing-section">
                     <div className="col text-right">
-                      <img src={mobile} width="446"/>
+                      <img src={mobile} width="446" alt='mobile'/>
                     </div>
                     <div className="col text-left">
                       <h4>Les avantages</h4>

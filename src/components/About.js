@@ -24,7 +24,7 @@ export default class About extends React.Component{
                     Aujourd'hui je mets ces compétences à votre disposition<br/> pour accompagner vos projets créatifs web et mobile <br/> qui nécessitent une maîtrise des technos modernes embarquées sur nos navigateurs. 
                   </p>
                   <div className="button_submit">
-                    <a href={cv} target="_blank">
+                    <a href={cv} target="_blank" rel="noopener noreferrer">
                       <span></span>
                       télécharger mon cv
                     </a>

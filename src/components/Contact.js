@@ -33,11 +33,31 @@ export default class Contact extends React.Component{
                     <br/>
                     <div className="social-media">
                         <ul>
-                            <li><a href="https://www.facebook.com/jeremy.yvinec" target="_blank"><FontAwesomeIcon icon={faFacebook} aria-hidden="true"></FontAwesomeIcon></a></li>
-                            <li><a href="https://twitter.com/Jeremyvinec" target="_blank"><FontAwesomeIcon icon={faTwitter} aria-hidden="true"></FontAwesomeIcon></a></li>
-                            <li><a href="https://www.instagram.com/jeremyvinec/" target="_blank"><FontAwesomeIcon icon={faInstagram} aria-hidden="true"></FontAwesomeIcon></a></li>
-                            <li><a href="https://www.linkedin.com/in/jeremyvinec/" target="_blank"><FontAwesomeIcon icon={faLinkedin} aria-hidden="true"></FontAwesomeIcon></a></li>
-                            <li><a href="https://github.com/jeremyvinec" target="_blank"><FontAwesomeIcon icon={faGithub} aria-hidden="true"></FontAwesomeIcon></a></li>
+                            <li>
+                                <a href="https://www.facebook.com/jeremy.yvinec" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faFacebook} aria-hidden="true"></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Jeremyvinec" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faTwitter} aria-hidden="true"></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/jeremyvinec/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faInstagram} aria-hidden="true"></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jeremyvinec/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedin} aria-hidden="true"></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jeremyvinec" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} aria-hidden="true"></FontAwesomeIcon>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
