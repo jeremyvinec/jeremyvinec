@@ -3,7 +3,7 @@ import React from 'react'
 import bps from '../assets/img/bps.png'
 import ima from '../assets/img/ivtracer-app.png'
 import yuka from '../assets/img/yuka.jpg'
-import spotify from '../assets/img/spotify.jpg'
+import optitrainer from '../assets/img/optitrainer.png'
 //import wilderness from '../assets/img/wilderness.jpg'
 
 export default class Portfolio extends React.Component{
@@ -34,9 +34,9 @@ export default class Portfolio extends React.Component{
                     </div>
                 </div>
                 <div className="container_image">
-                    <img src={spotify} className="image" alt="spotify-scrollable-header"/>
+                    <img src={optitrainer} className="image" alt="optitrainer webapp"/>
                     <div className="middle">
-                    <div className="text"><a className="link" href="https://github.com/jeremyvinec/spotify-scrollable-header" target="_blank" rel="noopener noreferrer">Spotify Scrollable Header</a></div>
+                    <div className="text"><a className="link" href="https://www.optitrainer.fr/" target="_blank" rel="noopener noreferrer">Optitrainer</a></div>
                     </div>
                 </div>
                 </div>
