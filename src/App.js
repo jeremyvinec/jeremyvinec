@@ -1,50 +1,22 @@
-import React from 'react';
-import Header from './components/Header'
-import About from './components/About'
-import Services from './components/Services'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomepageDark from "./pages/HomepageDark";
+import Bloglist from "./pages/Bloglist";
+import BlogDetails from "./pages/BlogDetails";
+import "./App.scss";
 
-export default class App extends React.Component {
-
-  render(){
-    return (
-      <div id="content">
-
-          <Header/>
-
-          <main id="slide" className="container">
-
-            <section id="a_propos" className="centered-container">
-              <About/>
-            </section>
-
-            <section id="services">
-               <Services/>
-            </section>
-
-            <section id="competences" className="centered-container">
-              <Skills/>
-            </section>
-
-            <section id="portfolio" className="centered-container">
-              <Portfolio/>
-            </section>
-
-            <section id="contact">
-              <Contact/>
-            </section>
-
-          </main>
-          
-          <footer className="cc-footer">
-
-            <Footer/>
-
-          </footer>
-      </div>
-    )
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact>
+          <HomepageDark />
+        </Route>
+        <Route path="/blogs" component={Bloglist} exact />
+        <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
+
+export default App;
