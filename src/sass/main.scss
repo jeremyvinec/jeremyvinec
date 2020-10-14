@@ -101,7 +101,7 @@ section.home {
 					color: $colordark;
 
 					&:hover {
-						color: $coloryellow;
+						color: $colorwhite;
 					}
 				}
 			}
@@ -112,12 +112,13 @@ section.home {
 .section-title {
 	font-size: 36px;
 	margin: 0;
-	margin-left: 14px;
+	// margin-left: 14px;
+	text-align: center;
 	position: relative;
 
 	&:before {
 		content: '';
-		background-image: url('/images/dots-bg.svg');
+		// background-image: url('/images/dots-bg.svg');
 		display: block;
 		height: 37px;
 		left: -14px;
@@ -125,6 +126,28 @@ section.home {
 		position: absolute;
 		width: 37px;
 	}
+}
+
+.section-header {
+	z-index: 1;
+	position: relative;
+	margin: 0 0 3em;
+	padding-bottom: 2em;
+	text-align: center;
+	margin-top: 5em;
+}
+
+.section-header::before {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 2em;
+	height: 2px;
+	margin: auto;
+	background-color: #CCC;
 }
 
 /*=================================================================*/
@@ -255,7 +278,8 @@ section.home {
 .portfolio-item {
 	position: relative;
 	overflow: hidden;
-
+	max-height: 230px;
+	
 	.thumb {
 		overflow: hidden;
 	}
@@ -281,7 +305,7 @@ section.home {
 
 		span.term {
 			color: #FFF;
-			background: $colorpink;
+			background: $colorgreen;
 			border-bottom-left-radius: 15px;
 			border-bottom-right-radius: 15px;
 			font-size: 14px;
@@ -299,7 +323,7 @@ section.home {
 			color: #FFF;
 			font-size: 20px;
 			display: block;
-			background: $coloryellow;
+			background: $colorgreen;
 			border-radius: 100%;
 			height: 40px;
 			line-height: 42px;
@@ -365,7 +389,7 @@ section.home {
 
 			&:hover,
 			&.current {
-				color: $colorpink;
+				color: $colorgreen;
 			}
 		}
 	}
@@ -555,7 +579,7 @@ select.portfolio-filter-mobile {
 	}
 
 	.category {
-		background: $colorpink;
+		background: $colorgreen;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		color: #FFF;
@@ -577,7 +601,7 @@ select.portfolio-filter-mobile {
 				color: $colordark;
 
 				&:hover {
-					color: $colorpink;
+					color: $colorgreen;
 				}
 			}
 		}
@@ -654,7 +678,7 @@ select.portfolio-filter-mobile {
 					border-radius: 100%;
 
 					&:hover {
-						background-color: $colorpink;
+						background-color: $colorgreen;
 					}
 				}
 			}
@@ -933,18 +957,14 @@ select.portfolio-filter-mobile {
 	margin-top: 60px;
 
 	.inner {
-		text-align: center;
-		position: absolute;
-		left: 0;
-		top: 50%;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
-		width: 100%;
 	}
 
 	img {
 		display: inline-block;
+		width: 100px;
 	}
 }
 

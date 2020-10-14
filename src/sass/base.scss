@@ -119,7 +119,7 @@ li {
 }
 
 a {
-    color: $colorpink;
+    color: $colorwhite;
     outline: 0;
     @include transition(.3s);
 
@@ -187,8 +187,8 @@ pre {
             width: 16px;
             height: 16px;
             display: block;
-            background: $colorpink;
-            box-shadow: 2px 2px 8px rgba($colorpink, .09);
+            background: $colorgreen;
+            box-shadow: 2px 2px 8px rgba($colorgreen, .09);
             border-radius: 50%;
             transform: rotate(90deg);
             animation: move 6.9s linear infinite;
@@ -243,8 +243,8 @@ pre {
         position: absolute;
         width: 16px;
         height: 16px;
-        background: $colorpink;
-        box-shadow: 2px 2px 8px rgba($colorpink, .09);
+        background: $colorgreen;
+        box-shadow: 2px 2px 8px rgba($colorgreen, .09);
         border-radius: 50%;
         animation: moveSvg 6.9s linear infinite;
         -webkit-filter: url(#goo);
@@ -295,7 +295,7 @@ pre {
     }
 
     75% {
-        background: $coloryellow;
+        background: $colorgreen;
     }
 
     100% {
@@ -323,7 +323,7 @@ pre {
     }
 
     25% {
-        background: $coloryellow;
+        background: $colorgreen;
     }
 
     75% {
@@ -390,8 +390,8 @@ pre {
     }
 }
 
-.colorpink {
-    color: $colorpink;
+.col$colorgreen {
+    color: $colorgreen;
 }
 
 .pointer {
@@ -412,6 +412,7 @@ pre {
 
 .profil {
     border-radius: 50%;
+    width: 75px;
 }
 
 .mt-6 {

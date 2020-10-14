@@ -11,6 +11,7 @@ import Herosection from "../components/sections/Herosection";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
 import Works from "../components/sections/Works";
+import Skills from '../components/sections/Skills'
 
 function HomepageDark() {
   document.body.classList.add("dark");
@@ -39,8 +40,8 @@ function HomepageDark() {
         <Element name="section-services">
           <Services />
         </Element>
-        <Element name="section-experiences">
-          <Experiences />
+        <Element name="section-skills">
+          <Skills />
         </Element>
         <Element name="section-works">
           <Works />

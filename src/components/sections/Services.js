@@ -13,11 +13,7 @@ function Services() {
   return (
     <section id="services">
       <div className="container">
-        <Pagetitle title="Services" />
-        <header className="section-header">
-            <h3>Services</h3>
-            <p>ReactJS & React Native</p>   
-        </header>
+        <Pagetitle title="Services" description="ReactJS & React Native" />
           <div className="row align-items-center">
             <div className="col">
               <div className="circles">

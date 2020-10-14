@@ -6,68 +6,57 @@ import Portfolio from "../elements/Portfolio";
 const filters = [
   {
     id: 1,
-    text: "Tout",
+    text: "All",
   },
   {
     id: 2,
-    text: "WebApp",
+    text: "Webapp",
   },
   {
     id: 3,
     text: "Mobile",
-  },
-  {
-    id: 4,
-    text: "design",
-  },
-  {
-    id: 5,
-    text: "branding",
   },
 ];
 
 const allData = [
   {
     id: 1,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
+    title: "Bretagne Pompes Services",
+    category: "Webapp",
+    image: "images/works/webapp.jpg",
+    popupLink: ["images/works/bps.png"],
   },
   {
     id: 2,
-    title: "Guest App Walkthrough Screens",
-    category: "creative",
-    image: "images/works/2.svg",
-    popupLink: [
-      "images/works/2.svg",
-      "images/works/5.svg",
-      "images/works/6.svg",
-    ],
+    title: "IVTracer",
+    category: "Mobile",
+    image: "images/works/mobile.jpg",
+    link: "https://ivtracer.com/",
   },
   {
     id: 3,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/3.svg",
-    popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
+    title: "Yuka MIW",
+    category: "Mobile",
+    image: "images/works/yuka.jpg",
+    popupLink: ["https://www.youtube.com/watch?v=BOOEVAaLoaY&feature=youtu.be"],
   },
   {
     id: 4,
-    title: "Onboarding Motivation",
-    category: "creative",
-    image: "images/works/4.svg",
+    title: "Rolling Balls",
+    category: "Mobile",
+    image: "images/works/mini-loto.png",
     popupLink: [
-      "https://www.youtube.com/watch?v=URVHRhBSjj8",
-      "https://www.youtube.com/watch?v=qf9z4ulfmYw",
+      "images/works/mini-loto.png",
+      "images/works/mini-loto-2.png",
+      "images/works/mini-loto-3.png"
     ],
   },
   {
     id: 5,
     title: "iMac Mockup Design",
     category: "art",
-    image: "images/works/5.svg",
-    popupLink: ["images/works/5.svg"],
+    image: "images/works/optitrainer.png",
+    popupLink: ["images/works/optitrainer.png"],
   },
   {
     id: 6,
@@ -179,7 +168,10 @@ function Works() {
   return (
     <section id="works">
       <div className="container">
-        <Pagetitle title="Porfolio" />
+        <Pagetitle 
+          title="Porfolio" 
+          description="Une sélection de projets sur lesquels j'ai pu intervenir. (en cours)" 
+        />
         {/* Start Portfolio Filters */}
         <ScrollAnimation
           animateIn="fadeInUp"
@@ -225,7 +217,7 @@ function Works() {
               "No more items"
             ) : (
               <span>
-                <i className="fas fa-spinner"></i> Voir +
+                <i className="fas fa-spinner"></i> ...
               </span>
             )}
           </button>

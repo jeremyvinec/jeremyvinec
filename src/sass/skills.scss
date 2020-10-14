@@ -1,0 +1,18 @@
+.skills-content {
+    max-width: 600px;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.skills-list li{
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	border-radius: 2px;
+	vertical-align: middle;
+	background: $colordefault;
+    margin: 0 0.5em 1em;
+}
+
+.skills-list{
+	padding-left: 0px;
+}

@@ -24,8 +24,6 @@ function Herosection(props) {
     >
       <div className="container">
         <div className="intro">
-          <img src="images/avatar.png" alt="jeremyvinec" className="mb-4 profil" />
-
           <h1 className="mb-2 mt-0 logo">Jérémy Yvinec</h1>
           <p>
             Développeur{" "}

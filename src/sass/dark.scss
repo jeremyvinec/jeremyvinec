@@ -9,7 +9,7 @@ body.dark {
         color: #FFF;
 
         &:before {
-            background: url('/images/dots-bg-light.svg');
+            //background: url('/images/dots-bg-light.svg');
         }
     }
 
@@ -20,7 +20,6 @@ body.dark {
     h1,
     h2,
     h3,
-    h4,
     h5,
     h6 {
         color: #FFF;
@@ -48,14 +47,14 @@ body.dark {
     }
 
     .portfolio-filter li button.current {
-        color: $colorpink;
+        color: $colorgreen;
     }
 
     .blog-item .details h4.title a {
         color: #FFF;
 
         &:hover {
-            color: $colorpink;
+            color: $colorgreen;
         }
     }
 

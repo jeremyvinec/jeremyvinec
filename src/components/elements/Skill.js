@@ -32,7 +32,7 @@ function Skill({ progress, isVisible }) {
   return (
     <div className="skill-item">
       <div className="skill-info clearfix">
-        <h4 className="float-left mb-3 mt-0">{title}</h4>
+        <h6 className="float-left mb-3 mt-0">{title}</h6>
         <span className="float-right">{percantage}%</span>
       </div>
       <div className="progress">{progressQuery()}</div>

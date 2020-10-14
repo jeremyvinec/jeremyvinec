@@ -2,7 +2,6 @@ import React from "react";
 import TrackVisibility from "react-on-screen";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
-import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Jérémy Yvinec",
@@ -17,46 +16,8 @@ const aboutContent = {
     `Aujourd'hui je mets ces compétences à votre disposition
     pour accompagner vos projets créatifs web et mobile
     qui nécessitent une maîtrise des technos modernes embarquées sur nos navigateurs.`,
+  cv: "/images/cv.png",
 };
-
-const progressData = [
-  {
-    id: 1,
-    title: "ReactJS",
-    percantage: 90,
-    progressColor: "#FFD15C",
-  },
-  {
-    id: 2,
-    title: "React Native",
-    percantage: 90,
-    progressColor: "#FF4C60",
-  },
-  {
-    id: 3,
-    title: "Redux",
-    percantage: 70,
-    progressColor: "#6C6CE5",
-  },
-  {
-    id: 4,
-    title: "NodeJS",
-    percantage: 70,
-    progressColor: "#6C6CE5",
-  },
-  {
-    id: 5,
-    title: "Express",
-    percantage: 70,
-    progressColor: "#6C6CE5",
-  },
-  {
-    id: 6,
-    title: "MongoDB / Firebase / AWS",
-    percantage: 70,
-    progressColor: "#6C6CE5",
-  },
-];
 
 const counterData = [
   {
@@ -89,11 +50,18 @@ function About() {
   return (
     <section id="about">
       <div className="container">
-        <Pagetitle title="À Propos" />
+        <Pagetitle 
+          title="À Propos" 
+          description="Les sujets sur lesquels je vais pouvoir vous aider." 
+        />
         <div className="row">
           <div className="col-md-3">
-            <div className="text-center text-md-left">
-              <img src={aboutContent.avatarImage} alt={aboutContent.name} className="profil" />
+            <div className="text-center mt-3">
+              <img 
+                src={aboutContent.avatarImage} 
+                alt={aboutContent.name} 
+                className="profil" 
+              />
             </div>
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
           </div>
@@ -101,30 +69,19 @@ function About() {
           <div className="col-md-9 triangle-left-md triangle-top-sm">
             <div className="rounded bg-white shadow-dark padding-30">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-12">
                   <p>{aboutContent.content_one}</p>
-                  <p>{aboutContent.content_two}</p>
-                  <p>{aboutContent.content_three}</p>
-                  <div className="mt-3">
-                    <a href="!#" className="btn btn-default">
+                  <p className="mt-3">{aboutContent.content_two}</p>
+                  <p className="mt-3">{aboutContent.content_three}</p>
+                  <a href={aboutContent.cv} target="_blanck">
+                    <div className="mt-4 btn btn-default">
                       Télécharger mon CV
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                   <div
                     className="spacer d-md-none d-lg-none"
                     data-height="30"
                   ></div>
-                </div>
-                <div className="col-md-6">
-                  {progressData.map((progress) => (
-                    <TrackVisibility
-                      once
-                      key={progress.id}
-                      className="progress-wrapper"
-                    >
-                      <Skill progress={progress} />
-                    </TrackVisibility>
-                  ))}
                 </div>
               </div>
             </div>

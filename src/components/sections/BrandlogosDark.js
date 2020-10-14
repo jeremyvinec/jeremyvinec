@@ -3,35 +3,23 @@ import React from "react";
 const brandlogoData = [
   {
     id: 1,
-    image: "images/client-1-light.svg",
+    image: "images/clients/optitrainer.png",
+    link: "https://www.optitrainer.fr/",
   },
   {
     id: 2,
-    image: "images/client-2-light.svg",
+    image: "images/clients/netceler.png",
+    link: "https://netceler.com/en/home/",
   },
   {
     id: 3,
-    image: "images/client-3-light.svg",
+    image: "images/clients/bloom-code.png",
+    link: "https://bloom-code.com/",
   },
   {
     id: 4,
-    image: "images/client-4-light.svg",
-  },
-  {
-    id: 5,
-    image: "images/client-5-light.svg",
-  },
-  {
-    id: 6,
-    image: "images/client-6-light.svg",
-  },
-  {
-    id: 7,
-    image: "images/client-7-light.svg",
-  },
-  {
-    id: 8,
-    image: "images/client-8-light.svg",
+    image: "images/clients/imageimages.png",
+    link: "https://www.imageimages.net/",
   },
 ];
 
@@ -44,7 +32,9 @@ function BrandlogosDark() {
             <div className="col-md-3 col-6" key={brandlogo.id}>
               <div className="client-item">
                 <div className="inner">
-                  <img src={brandlogo.image} alt="client-name" />
+                  <a href={brandlogo.link} target="_blanck">
+                    <img src={brandlogo.image} alt="client-name" />
+                  </a>
                 </div>
               </div>
             </div>
