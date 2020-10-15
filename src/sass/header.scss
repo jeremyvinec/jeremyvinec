@@ -66,13 +66,13 @@ header.desktop-header-1 {
 
 			&:hover,
 			&.active {
-				color: $colorgreen;
+				color: $colorreact;
 				cursor: pointer;
 			}
 		}
 
 		i {
-			color: $colorgreen;
+			color: $colorreact;
 			margin-right: 20px;
 		}
 	}
@@ -119,7 +119,7 @@ header.desktop-header-1 {
 	}
 
 	.vertical-menu li .nav-link.active {
-		color: $colorgreen;
+		color: $colorreact;
 	}
 
 	/* === Submenu === */
@@ -162,19 +162,19 @@ header.desktop-header-1 {
 		border-right: solid 1px rgba(0, 0, 0, 0.05);
 
 		.vertical-menu li .nav-link.active {
-			color: $colorgreen;
+			color: $colorreact;
 		}
 
 		.vertical-menu li a {
 			color: $colordark;
 
 			&:hover {
-				color: $colorgreen;
+				color: $colorreact;
 			}
 		}
 
 		.vertical-menu li i {
-			color: $colorgreen;
+			color: $colorreact;
 		}
 	}
 }
@@ -238,10 +238,10 @@ header.desktop-header-2 {
 
 		a {
 			&:hover {
-				color: $colorgreen;
+				color: $colorreact;
 
 				i {
-					color: $colorgreen;
+					color: $colorreact;
 					opacity: 1;
 				}
 			}
@@ -272,10 +272,10 @@ header.desktop-header-2 {
 	}
 
 	.vertical-menu li .nav-link.active {
-		color: $colorgreen;
+		color: $colorreact;
 
 		i {
-			color: $colorgreen;
+			color: $colorreact;
 			opacity: 1;
 		}
 	}
@@ -293,6 +293,12 @@ header.desktop-header-2 {
 		white-space: nowrap;
 		display: inline-block;
 		overflow: visible;
+	}
+
+	.jeremyvinec {
+		font-family: $fonthoney;
+		color: #9C9AB3;
+		font-size: 23px;
 	}
 
 	&.light {
@@ -491,11 +497,11 @@ header.mobile-header-2 {
 		cursor: pointer;
 
 		&.active {
-			color: $colorgreen !important;
+			color: $colorreact !important;
 		}
 
 		&:hover {
-			color: $colorgreen !important;
+			color: $colorreact !important;
 		}
 	}
 

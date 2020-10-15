@@ -21,6 +21,11 @@ const brandlogoData = [
     image: "images/clients/imageimages.png",
     link: "https://www.imageimages.net/",
   },
+  {
+    id: 5,
+    image: "images/clients/mapway.png",
+    link: "",
+  },
 ];
 
 function BrandlogosDark() {

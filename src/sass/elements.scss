@@ -183,7 +183,7 @@
     background: #FFF;
     font-family: 'simple-line-icons';
     font-size: 24px;
-    color: $colorgreen;
+    color: $colorreact;
     position: absolute;
     left: -7px;
     top: 0;
@@ -195,7 +195,7 @@
     background: #FFF;
     font-family: 'simple-line-icons';
     font-size: 24px;
-    color: $colorgreen;
+    color: $colorreact;
     position: absolute;
     left: -7px;
     top: 0;
@@ -223,7 +223,7 @@
 .timeline span.line {
     position: absolute;
     width: 1px;
-    background-color: $colorgreen;
+    background-color: $colorreact;
     top: 30px;
     bottom: 30px;
     left: 34px;
@@ -242,7 +242,7 @@
     &.light {
         li {
             a:hover {
-                color: $colorgreen;
+                color: $colorreact;
             }
         }
     }
@@ -281,7 +281,7 @@
 }
 
 #return-to-top:hover {
-    background: $colorgreen;
+    background: $colorreact;
 }
 
 /* === Helper === */

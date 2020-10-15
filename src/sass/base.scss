@@ -187,8 +187,8 @@ pre {
             width: 16px;
             height: 16px;
             display: block;
-            background: $colorgreen;
-            box-shadow: 2px 2px 8px rgba($colorgreen, .09);
+            background: $colorreact;
+            box-shadow: 2px 2px 8px rgba($colorreact, .09);
             border-radius: 50%;
             transform: rotate(90deg);
             animation: move 6.9s linear infinite;
@@ -243,8 +243,8 @@ pre {
         position: absolute;
         width: 16px;
         height: 16px;
-        background: $colorgreen;
-        box-shadow: 2px 2px 8px rgba($colorgreen, .09);
+        background: $colorreact;
+        box-shadow: 2px 2px 8px rgba($colorreact, .09);
         border-radius: 50%;
         animation: moveSvg 6.9s linear infinite;
         -webkit-filter: url(#goo);
@@ -295,7 +295,7 @@ pre {
     }
 
     75% {
-        background: $colorgreen;
+        background: $colorreact;
     }
 
     100% {
@@ -323,7 +323,7 @@ pre {
     }
 
     25% {
-        background: $colorgreen;
+        background: $colorreact;
     }
 
     75% {
@@ -390,8 +390,8 @@ pre {
     }
 }
 
-.col$colorgreen {
-    color: $colorgreen;
+.col$colorreact {
+    color: $colorreact;
 }
 
 .pointer {

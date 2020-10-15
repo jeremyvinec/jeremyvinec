@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-scroll";
 import Logo from "../elements/Logo";
 
-function Header({ light, logoSource, toggleMenu, headerToggler }) {
+function Header2({ light, logoSource, toggleMenu, headerToggler }) {
   const handleClasses = () => {
-    let classes = "desktop-header-1 d-flex align-items-start flex-column";
+    let classes = "desktop-header-2 d-flex align-items-start flex-column";
     if (light & toggleMenu) {
       classes += " light open";
     } else if (toggleMenu) {
@@ -15,7 +15,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
     return classes;
   };
   const handleMobileClasses = () => {
-    let classes = "mobile-header-1";
+    let classes = "mobile-header-2";
     if (light & toggleMenu) {
       classes += " light open";
     } else if (toggleMenu) {
@@ -34,6 +34,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
               <span></span>
             </button>
           </div>
+          <Logo logoSource={logoSource} />
         </div>
       </header>
       <header className={handleClasses()}>
@@ -48,7 +49,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-home"></i>Accueil
+                <i className="fa-xs icon-home"></i>
               </Link>
             </li>
             <li>
@@ -59,7 +60,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-user-following"></i>À Propos
+                <i className="fa-xs icon-user-following"></i>
               </Link>
             </li>
             <li>
@@ -70,18 +71,18 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-briefcase"></i>Services
+                <i className="fa-xs icon-briefcase"></i>
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                to="section-skills"
+                to="section-experiences"
                 spy={true}
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-graduation"></i>Compétences
+                <i className="fa-xs icon-graduation"></i>
               </Link>
             </li>
             <li>
@@ -92,7 +93,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-layers"></i>Porfolio
+                <i className="fa-xs icon-layers"></i>
               </Link>
             </li>
             <li>
@@ -103,7 +104,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-note"></i>Blog
+                <i className="fa-xs icon-note"></i>
               </Link>
             </li>
             <li>
@@ -114,7 +115,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-bubbles"></i>Contact
+                <i className="fa-xs icon-bubbles"></i>
               </Link>
             </li>
           </ul>
@@ -122,7 +123,10 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
 
         <div className="footer">
           <span className="copyright">
-          Copyright &copy; 2017 All Rights Reserved.
+            &copy; 2017
+            <span className="jeremyvinec mt-1">
+              Jeremyvinec
+            </span>
           </span>
         </div>
       </header>
@@ -130,4 +134,4 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
   );
 }
 
-export default Header;
+export default Header2;

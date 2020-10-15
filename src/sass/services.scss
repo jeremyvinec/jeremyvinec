@@ -6,7 +6,7 @@ $x: 3;
   height: $width;
   position: relative;
   perspective: 50000px;
-  color: #61DAFB;
+  color: $colorreact;
   margin: 0 auto;
   
   span {
@@ -62,7 +62,7 @@ ol {
 
 ol li:before {
 	content: counter(li); 
-	color: #2bb573;
+	color: $colorreact;
 	display: inline-block; 
 	width: 1em;
 	margin-left: -1.5em;
