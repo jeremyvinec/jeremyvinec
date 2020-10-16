@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagetitle from "../elements/Pagetitle";
 
 function Contact() {

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Pagetitle from "../elements/Pagetitle";
 
 const images = {

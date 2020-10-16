@@ -1,6 +1,4 @@
 import React from "react";
-import TrackVisibility from "react-on-screen";
-import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 
 const aboutContent = {
@@ -18,33 +16,6 @@ const aboutContent = {
     qui nécessitent une maîtrise des technos modernes embarquées sur nos navigateurs.`,
   cv: "/images/cv.png",
 };
-
-const counterData = [
-  {
-    id: 1,
-    title: "Projets terminés",
-    count: 198,
-    icon: "icon-fire",
-  },
-  {
-    id: 2,
-    title: "Tasse de café",
-    count: 5670,
-    icon: "icon-cup",
-  },
-  {
-    id: 3,
-    title: "Clients satisfaits",
-    count: 427,
-    icon: "icon-people",
-  },
-  {
-    id: 4,
-    title: "Nominees winner",
-    count: 35,
-    icon: "icon-badge",
-  },
-];
 
 function About() {
   return (
@@ -87,7 +58,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="spacer" data-height="70"></div>
+        {/*<div className="spacer" data-height="70"></div>
         <div className="row fix-spacing">
           {counterData.map((counter) => (
             <div key={counter.id} className="col-md-3 col-sm-6">
@@ -96,7 +67,7 @@ function About() {
               </TrackVisibility>
             </div>
           ))}
-        </div>
+        </div>*/}
       </div>
     </section>
   );
