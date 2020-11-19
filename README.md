@@ -1,4 +1,4 @@
-![logo](https://github.com/jeremyvinec/jeremyvinec/blob/master/src/assets/img/logo.png)
+![logo](https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/logo.png)
 
 <p align="center">
   <a href="https://jeremyvinec.dev/">Website</a> -
