@@ -10,4 +10,4 @@ Hi 👋, I'm Jérémy, a freelance developer living in Gap, specialized in **Rea
 
 ---
 
-[![jeremyvinec github stats](https://github-readme-stats.vercel.app/api?username=jeremyvinec)](https://github.com/anuraghazra/github-readme-stats)
+[![jeremyvinec github stats](https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
