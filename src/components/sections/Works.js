@@ -40,7 +40,7 @@ const allData = [
     image: "images/works/yuka-showcase.png",
     popupLink: ["https://www.youtube.com/watch?v=BOOEVAaLoaY&feature=youtu.be"],
   },
-  {
+  /*{
     id: 4,
     title: "Rolling Balls",
     category: "mobile",
@@ -50,7 +50,7 @@ const allData = [
       "images/works/mini-loto-2.png",
       "images/works/mini-loto-3.png"
     ],
-  },
+  },*/
   {
     id: 5,
     title: "Optitrainer",
@@ -68,7 +68,7 @@ const allData = [
       "images/works/mapway-2.png",
     ],
   },
-  {
+  /*{
     id: 7,
     title: "Le guide du sénior",
     category: "mobile",
@@ -78,7 +78,7 @@ const allData = [
       "images/works/le-guide-senior-2.png",
       "images/works/le-guide-senior-3.png"
     ],
-  },
+  },*/
 ];
 
 function Works() {

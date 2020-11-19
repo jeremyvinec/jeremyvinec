@@ -6,7 +6,7 @@ import Testimonial from "../elements/Testimonial";
 const sliderData = [
   {
     id: 1,
-    avatar: "images/avatar-1.svg",
+    avatar: "images/woman.png",
     userName: "Fabienne",
     subtitle: "IMAGEIMAGES",
     review:
