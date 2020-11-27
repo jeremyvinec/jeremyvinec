@@ -11,7 +11,7 @@ Hi 👋, I'm Jérémy, a freelance developer living in Gap, specialized in **Rea
 ---
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=jeremyvinec&repo=github-readme-stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true" />
 </a>
 
 [![jeremyvinec github stats](https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
