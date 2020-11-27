@@ -11,7 +11,3 @@
 Hi 👋, I'm Jérémy, a freelance developer living in Gap, specialized in **React** and **ReactNative**.
 
 ---
-
-<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&count_private=true&card_width=50" />
-</a>
