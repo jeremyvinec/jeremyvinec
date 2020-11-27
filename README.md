@@ -1,6 +1,6 @@
-<a href="https://jeremyvinec.dev/" target="_blank">
+<p align="center">
   <img src="https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/jeremyvinec.png"/>
-</a>
+</p>
 
 <p align="center">
   <a href="https://jeremyvinec.dev/" target="_blank">Website</a> -
