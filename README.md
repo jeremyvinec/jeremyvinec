@@ -1,4 +1,6 @@
-![logo](https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/jeremyvinec.png)
+<a href="https://jeremyvinec.dev/" target="_blank">
+  <img src="https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/jeremyvinec.png"/>
+</a>
 
 <p align="center">
   <a href="https://jeremyvinec.dev/" target="_blank">Website</a> -
@@ -10,8 +12,6 @@ Hi 👋, I'm Jérémy, a freelance developer living in Gap, specialized in **Rea
 
 ---
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true" />
+<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&count_private=true&card_width=50" />
 </a>
-
-[![jeremyvinec github stats](https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
