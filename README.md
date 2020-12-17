@@ -1,4 +1,6 @@
-![logo](https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/jeremyvinec.png)
+<p align="center">
+  <img src="https://github.com/jeremyvinec/jeremyvinec/blob/master/public/images/jeremyvinec.png"/>
+</p>
 
 <p align="center">
   <a href="https://jeremyvinec.dev/" target="_blank">Website</a> -
@@ -9,6 +11,3 @@
 Hi 👋, I'm Jérémy, a freelance developer living in Gap, specialized in **React** and **ReactNative**.
 
 ---
-
-[![jeremyvinec github stats](https://github-readme-stats.vercel.app/api?username=jeremyvinec&show_icons=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
-[![jeremyvinec wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=jeremyvinec)](https://github.com/anuraghazra/github-readme-stats)
