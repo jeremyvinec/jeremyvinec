@@ -8,6 +8,9 @@ import ButcherTerms from './pages/butcher/Terms';
 import NutritiveTerms from './pages/nutritive/Terms';
 import NutritivePrivacy from './pages/nutritive/Privacy';
 import NutritiveData from './pages/nutritive/Data';
+import MapwayData from './pages/mapway/Data';
+import MapwayTerms from './pages/mapway/Terms';
+import MapwayPrivacy from './pages/mapway/Privacy';
 import Coffee from "./pages/coffee/Coffee";
 import "./App.scss";
 
@@ -34,6 +37,15 @@ function App() {
         </Route>
         <Route exact path="/:app/nutritive/data">
           <NutritiveData/>
+        </Route>
+        <Route exact path="/:app/mapway/privacy" >
+          <MapwayPrivacy/>
+        </Route>
+        <Route exact path="/:app/mapway/terms">
+          <MapwayTerms/>
+        </Route>
+        <Route exact path="/:app/mapway/data">
+          <MapwayData/>
         </Route>
     </Router>
   );
